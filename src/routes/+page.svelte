@@ -25,7 +25,10 @@
 					birth dashboard
 				</div>
 			</div>
-			<h1 class="mb-2 flex text-7xl !font-light">
+			<h1
+				class="mb-2 flex text-7xl !font-light"
+				style="-webkit-text-stroke: 12px white; paint-order: stroke fill;"
+			>
 				<span style="color: var(--secondary-foreground);">snail</span>
 				<span class="bubblegum-sans-regular" style="color: var(--ring);">stamp</span>
 			</h1>
@@ -63,10 +66,10 @@
 					<div class="flex justify-between">
 						<div class="flex items-center">
 							<p class="text-sm">Haven't account?</p>
-							<Button variant="link" size="sm">Sign up</Button>
+							<Button variant="link" size="sm" type="button">Sign up</Button>
 						</div>
 
-						<Button variant="default" size="lg">
+						<Button variant="default" size="lg" class="cursor-pointer shadow" type="submit">
 							<BombEmojiOutlineIcon size="28" />
 							<span class="gluten-font">Let's go!</span>
 						</Button>
