@@ -1,7 +1,6 @@
 <script lang="ts">
 	import './layout.css';
-
-	const { children } = $props();
+	let { children } = $props();
 </script>
 
-{@render children()}
+{@render children?.()}

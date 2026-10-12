@@ -20,5 +20,10 @@ export default defineConfig({
 			// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 			adapter: adapter()
 		})
-	]
+	],
+	ssr: {
+		// layerchart ships .svelte files in its dist — Node.js can't process them natively,
+		// so we tell Vite to bundle them instead of externalizing them during SSR.
+		noExternal: ['layerchart', /^d3-/, /^internmap/, /^robust-predicates/]
+	}
 });

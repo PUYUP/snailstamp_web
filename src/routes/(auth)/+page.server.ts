@@ -20,6 +20,6 @@ export const actions: Actions = {
 
 		// TODO: handle login logic here (e.g. check credentials, create session)
 
-		redirect(303, '/dashboard');
+		redirect(303, '/home');
 	}
 };

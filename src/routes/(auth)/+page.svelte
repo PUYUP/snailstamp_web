@@ -52,8 +52,8 @@
 				class="mb-2 flex text-7xl !font-light"
 				style="-webkit-text-stroke: 12px white; paint-order: stroke fill;"
 			>
-				<span style="color: var(--secondary-foreground);">snail</span>
-				<span class="bubblegum-sans-regular" style="color: var(--ring);">stamp</span>
+				<span class="gaegu-regular" style="color: var(--secondary-foreground);">snail</span>
+				<span class="gaegu-regular" style="color: var(--ring);">stamp</span>
 			</h1>
 
 			<p class="text-sm tracking-wider">
@@ -74,7 +74,7 @@
 						<Field.Group>
 							<Field.Field>
 								<div class="flex items-center">
-									<Field.Label for="email">
+									<Field.Label for="email" class="gaegu-regular text-base">
 										<LetterOutlineIcon color="var(--foreground)" opacity="0.65" />
 										Email Address <span class="text-2xl leading-3 text-rose-300">*</span>
 									</Field.Label>
@@ -97,7 +97,7 @@
 							</Field.Field>
 							<Field.Field>
 								<div class="flex items-center">
-									<Field.Label for="password">
+									<Field.Label for="password" class="gaegu-regular text-base">
 										<PasswordOutlineIcon color="var(--foreground)" opacity="0.65" />
 										Password <span class="text-2xl leading-3 text-rose-300">*</span>
 									</Field.Label>

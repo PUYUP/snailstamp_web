@@ -48,6 +48,7 @@
 		"bits-ui": "^2.19.5",
 		"class-validator": "^0.14.4",
 		"cn": "^0.4.0",
+		"layerchart": "^2.7.0",
 		"prettier": "^3.8.3",
 		"prettier-plugin-svelte": "^4.1.0",
 		"prettier-plugin-tailwindcss": "^0.8.0",
@@ -71,6 +72,7 @@
 	},
 	"dependencies": {
 		"@solar-icons/svelte": "^2.3.2",
+		"d3-scale": "^4.0.2",
 		"zod": "^4.6.5"
 	}
 }
