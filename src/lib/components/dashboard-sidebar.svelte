@@ -68,7 +68,7 @@
 					{#each menuItems as item (item.href)}
 						{@const active = isActive(item.href)}
 						<Sidebar.MenuItem>
-							<Sidebar.MenuButton class="flex items-center gap-4 text-base">
+							<Sidebar.MenuButton class="flex items-center gap-4 text-lg">
 								{#snippet child({ props })}
 									<a href={item.href} {...props} aria-current={active ? 'page' : undefined}>
 										<item.icon color="var(--foreground)" opacity={active ? 1 : 0.75} size="22" />

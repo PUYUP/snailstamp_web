@@ -1,4 +1,5 @@
 <script lang="ts">
+	import './style.css';
 	import { scaleBand } from 'd3-scale';
 	import { BarChart } from 'layerchart';
 	import { cubicInOut } from 'svelte/easing';
@@ -12,44 +13,47 @@
 	];
 
 	const chartConfig = {
-		in_process: { label: 'In Process', color: 'var(--border)' },
-		done: { label: 'Done', color: 'var(--sidebar-primary)' }
+		in_process: { label: 'Brewing', color: 'var(--border)' },
+		done: { label: 'Served', color: 'var(--sidebar-primary)' }
 	} satisfies Chart.ChartConfig;
 </script>
 
-<Chart.Container config={chartConfig}>
-	<BarChart
-		labels={{
-			offset: 8,
-			fontSize: '8px',
-			color: 'red'
-		}}
-		data={chartData}
-		xScale={scaleBand().padding(0.25)}
-		x="month"
-		axis="x"
-		series={[
-			{ key: 'in_process', label: 'In Process', color: chartConfig.in_process.color },
-			{ key: 'done', label: 'Done', color: chartConfig.done.color }
-		]}
-		x1Scale={scaleBand().paddingInner(0.2)}
-		seriesLayout="group"
-		rule={false}
-		props={{
-			bars: {
-				stroke: 'none',
-				strokeWidth: 0,
-				radius: 14,
-				rounded: 'top',
-				motion: { type: 'tween', duration: 500, easing: cubicInOut }
-			},
-			highlight: { area: { fill: 'none' } },
-			xAxis: { format: (d) => d.slice(0, 3) }
-		}}
-		legend
-	>
-		{#snippet tooltip()}
-			<Chart.Tooltip indicator="dashed" />
-		{/snippet}
-	</BarChart>
-</Chart.Container>
+<div class="h-[140px]">
+	<Chart.Container config={chartConfig}>
+		<BarChart
+			labels={{
+				offset: 8,
+				fontSize: '8px',
+				color: 'red'
+			}}
+			data={chartData}
+			xScale={scaleBand().padding(0.25)}
+			x="month"
+			axis="x"
+			series={[
+				{ key: 'in_process', label: 'Brewing', color: chartConfig.in_process.color },
+				{ key: 'done', label: 'Served', color: chartConfig.done.color }
+			]}
+			x1Scale={scaleBand().paddingInner(0.2)}
+			seriesLayout="group"
+			rule={false}
+			height={140}
+			props={{
+				bars: {
+					stroke: 'none',
+					strokeWidth: 0,
+					radius: 14,
+					rounded: 'top',
+					motion: { type: 'tween', duration: 500, easing: cubicInOut }
+				},
+				highlight: { area: { fill: 'none' } },
+				xAxis: { format: (d) => d.slice(0, 3) }
+			}}
+			legend
+		>
+			{#snippet tooltip()}
+				<Chart.Tooltip indicator="dashed" />
+			{/snippet}
+		</BarChart>
+	</Chart.Container>
+</div>

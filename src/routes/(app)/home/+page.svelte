@@ -5,7 +5,7 @@
 
 <div class="block p-6 lg:p-10">
 	<div
-		class="4xl:grid-cols-4 grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
+		class="4xl:grid-cols-4 xl:grap-10 grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-2 lg:gap-8 xl:grid-cols-3 2xl:grid-cols-3"
 	>
 		<div class="block">
 			<EntryStats />

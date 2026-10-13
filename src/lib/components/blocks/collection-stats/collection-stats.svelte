@@ -1,7 +1,7 @@
 <script lang="ts">
 	import * as Card from '#lib/components/ui/card/index.ts';
 	import {
-		LibraryOutlineIcon,
+		LibraryBoldDuotoneIcon,
 		SledgehammerOutlineIcon,
 		MailboxOutlineIcon
 	} from '@solar-icons/svelte';
@@ -10,12 +10,12 @@
 </script>
 
 <div class="block">
-	<Card.Root class="border-0 shadow">
+	<Card.Root class="border-0 bg-sidebar shadow">
 		<Card.Header>
 			<Card.Title class="flex items-center gap-3 text-xl">
-				<LibraryOutlineIcon size="38" class="text-primary" />
+				<LibraryBoldDuotoneIcon size="38" class="text-primary" />
 				<span
-					class="gaegu-regular text-lg underline decoration-primary decoration-wavy underline-offset-6 lg:text-2xl"
+					class="gaegu-regular text-xl underline decoration-primary decoration-wavy underline-offset-6 lg:text-2xl"
 				>
 					Collections
 				</span>
@@ -40,7 +40,7 @@
 								<SledgehammerOutlineIcon size="30" class="text-neutral-400" />
 							</div>
 						</div>
-						<div class="gluten-font text-4xl">36</div>
+						<div class="gluten-font text-center text-2xl xl:text-4xl">1</div>
 					</div>
 				</div>
 
@@ -52,7 +52,7 @@
 								<MailboxOutlineIcon size="34" class="text-neutral-400" />
 							</div>
 						</div>
-						<div class="gluten-font text-4xl">34</div>
+						<div class="gluten-font text-center text-2xl xl:text-4xl">1</div>
 					</div>
 				</div>
 			</div>

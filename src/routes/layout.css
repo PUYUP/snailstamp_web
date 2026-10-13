@@ -33,6 +33,12 @@
 	font-style: normal;
 }
 
+.schoolbell-regular {
+  font-family: "Schoolbell", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
 	/* Botanical & Calm */
 	--background: oklch(0.981 0.012 92);
@@ -185,3 +191,12 @@
 		@apply font-sans;
 	}
 }
+
+/* ---------- Brush-stroke divider ---------- */
+  .divider {
+    height: 22px;
+    background: var(--primary);
+    -webkit-mask: var(--div) center / 100% 100% no-repeat;
+            mask: var(--div) center / 100% 100% no-repeat;
+    --div: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 30' preserveAspectRatio='none'><filter id='g' x='-5%25' y='-50%25' width='110%25' height='200%25'><feTurbulence type='fractalNoise' baseFrequency='0.02 0.9' numOctaves='2' seed='9' result='n'/><feDisplacementMap in='SourceGraphic' in2='n' scale='10'/></filter><path filter='url(%23g)' d='M4 16 C120 6 220 24 340 14 S560 10 596 15 L596 20 C470 26 360 18 240 24 S60 22 4 21 Z' fill='black'/></svg>");
+  }

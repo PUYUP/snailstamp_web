@@ -1,7 +1,7 @@
 <script lang="ts">
 	import * as Card from '#lib/components/ui/card/index.ts';
 	import {
-		SquareShareLineOutlineIcon,
+		SquareShareLineBoldDuotoneIcon,
 		Reorder2OutlineIcon,
 		FolderCheckOutlineIcon
 	} from '@solar-icons/svelte';
@@ -10,12 +10,12 @@
 </script>
 
 <div class="block">
-	<Card.Root class="border-0 shadow">
+	<Card.Root class="border-0 bg-sidebar shadow">
 		<Card.Header>
 			<Card.Title class="flex items-center gap-3 text-xl">
-				<SquareShareLineOutlineIcon size="38" class="text-primary" />
+				<SquareShareLineBoldDuotoneIcon size="42" class="text-primary" />
 				<span
-					class="gaegu-regular text-lg underline decoration-primary decoration-wavy underline-offset-6 lg:text-2xl"
+					class="gaegu-regular text-xl underline decoration-primary decoration-wavy underline-offset-6 lg:text-2xl"
 				>
 					Entries
 				</span>
@@ -24,6 +24,7 @@
 					size="sm"
 					class="gluten-font ml-auto border-2 border-dashed text-primary"
 					variant="outline"
+					href="/entries"
 				>
 					View all
 				</Button>
@@ -40,7 +41,7 @@
 								<Reorder2OutlineIcon size="30" class="text-neutral-400" />
 							</div>
 						</div>
-						<div class="gluten-font text-4xl">1</div>
+						<div class="gluten-font text-center text-2xl xl:text-4xl">0</div>
 					</div>
 				</div>
 
@@ -52,7 +53,7 @@
 								<FolderCheckOutlineIcon size="30" class="text-neutral-400" />
 							</div>
 						</div>
-						<div class="gluten-font text-4xl">34</div>
+						<div class="gluten-font text-center text-2xl xl:text-4xl">0</div>
 					</div>
 				</div>
 			</div>
